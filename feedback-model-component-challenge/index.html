@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Feedback Modal Component - FrontendPro Challenge</title>
+  </head>
+  <body>
+    <div class="one">
+      <h3>How likely are you to recommend FrontendPro to someone you know?</h3>
+      <div class="numbers">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+      <div class="likely">
+        <p id="one">Not likely at all</p> 
+        <p id="two">Extremely Likely</p>
+      </div>
+      <div class="buttons">
+        <button id="cancel">Cancel</button>
+        <button id="submit">Submit</button>
+      </div>
+    </div>
+    <div class="two hidden">
+      <section>You selected out <span id="rate"></span> of 10</section>
+       <h1>Thank you!</h1>
+     <p>We appreciate you taking the time to give a rating. If you ever need more support,don't hesitate to get in touch!</p>
+    </div>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>
