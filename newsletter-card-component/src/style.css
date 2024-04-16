@@ -113,16 +113,38 @@ input[type=email]:focus{
 }
 @media (max-width:500px){
   main{
-    margin-top: 20px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0rem;
   }
   body{
     padding-bottom: 20px
   }
+  .content{
+    flex-direction: column;
+  }
+  #email,button{
+    width: 80vw;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #email{
+    font-size: 90%;
+  }
+  .checkbox{
+    width: 80vw;
+  }
+  p{
+    width: 90vw;
+  }
+  #submit{
+    margin-top: 10px;
+  }
 }
-@media (max-width:1000px) {
+@media (min-width:500px) and (max-width:1000px) {
   main{
     width: 80vw;
-   
   }
   #submit{
     margin-top: 10px;
@@ -130,7 +152,7 @@ input[type=email]:focus{
   .content{
     flex-direction: column;
   }
-  #email{
+  #email,button{
     width: 70vw;
     text-align: center;
     padding-left: 10px;
