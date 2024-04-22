@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --green: #22C55E;
+    --red:#FE6B7E;
+    --blue:#175CFF;
+    --background1:#DEF4ED;
+    --background2:#FCDDE1;
+    --background3:#CEDDFF;
+    --shadow1:#5BB297;
+    --text1:#071C4D;
+    --text2:#202020;
+    --body:#F8F9FA;
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    align-items:center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: var(--body);
+}
+p{
+    color: var(--text2);
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    line-height: 25px;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+h1{
+    width: 30vw;
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--text1);
+}
+h3{
+    font-size:32px;
+    color: var(--text1);
+}
+.main{
+    display: flex;
+    gap: 50px;
+
+}
+.one,.two,.three{
+    width: 400px;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.one{
+    background-color: var(--background1);
+    border-radius: 0.5rem;
+    box-shadow: 8px 8px var(--shadow1)
+}
+.two{
+    background-color: var(--background2);
+    box-shadow: 8px 8px var(--red);
+    border-radius: 0.5rem;
+}
+.three{
+    background-color: var(--background3);
+    border-radius: 0.5rem;
+    
+    box-shadow: 8px 8px var(--blue);
+}
+.green svg{
+    background-color: var(--green);
+    padding: 3px;
+    border-radius: 0.1rem;
+}
+.red svg{
+    background-color: var(--red);
+    padding: 3px;
+    border-radius: 0.1rem;
+}
+.blue svg{
+    background-color: var(--blue);
+    padding: 3px;
+    border-radius: 0.1rem;
+}
+svg{
+    color: white;
+}
+.one img{
+    background-color: var(--shadow1);
+    height: 38px;
+}
+.two img{
+    background-color: var(--red);
+}
+.three img{
+    background-color: var(--blue);
+}
+img{
+    max-width: 100%;
+    width: 40px;
+    padding: 2px;
+    height: 40px;
+    border-radius: 50%;
+}
+.inside{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.inside h5{
+    line-height: 25px;
+    font-size: 14px;
+    color: var(--text1);
+}
+.inside p{
+    font-size: 12px;
+    line-height: 10px;
+}
+@media (max-width:700px){
+    .one,.two,.three{
+        width: 80vw;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        padding-bottom: 50px;
+        align-items: left;
+    }
+    .body{
+        padding-top: 50px;
+    }
+    .body{
+        align-items: left;
+    }
+}
+@media (min-width:700px) and (max-width:1300px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        padding-bottom: 50px;
+        align-items: center;
+    }
+    .body{
+        padding-top: 50px;
+    }
+    .body{
+        align-items: center;
+    }
+   
+}
+/* write your CSS here */
