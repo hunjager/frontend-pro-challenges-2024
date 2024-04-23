@@ -57,6 +57,10 @@ p{
    color: #E2E8F0;
    font-size: 64px;
 }
+.stars i:hover{
+  color: var(--yellow);
+  cursor: pointer;
+}
 .stars i.active{
   color: var(--yellow);
 }
