@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<h2>SPLI<br>TTER</h2>
+<main>
+  <div class="left">
+    <form action="GET">
+      <div class="inputs">
+      <label for="Bill">Bill</label>
+      <input id="bill"  placeholder="0" type="number">
+      </div>
+   <div class="middle">
+    <h4 for="tip">Select Tip %</h4>
+    <div class="tips">
+      <div>
+      <span id="five-percent" class="tip">5%</span>
+      <span id="ten-percent" class="tip">10%</span>
+      <span id="fifteen-percent" class="tip">15%</span>
+      </div>
+      <div>
+      <span id="twentyFive-percent" class="tip">25%</span>
+      <span id="fifty-percent" class="tip">50%</span>
+      <input type="number" name="custom" id="custom" placeholder="Custom">
+      </div>
+   </div>
+    </div> 
+
+    <div class="inputs">
+      <div><label for="people">Number of People</label><span id="error">Can't be zero</span></div>
+     <input type="number" id="people" placeholder="0" min="1">
+    </div>
+    
+  </form>
+  </div>
+<div class="right">
+  <div><p id="left">Tip Amount<br><span>/ person</span></p><div id="right" class="tip-value">$0.00</div></div>
+  <div><p id="left">Total<br><span>/ person</span></p><div id="right" class="total">$0.00</div></div>
+  <button id="reset">RESET</button>
+</div
+</main>
+<script src="script.js"></script>
+</body>
+</html>
